@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csv-plotter-app"
+version = "0.1.1"
+authors = [
+  { name="Your Name", email="youremail@example.com" },
+]
+description = "A simple Streamlit app to plot CSV data."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "streamlit>=1.20",
+    "pandas>=1.3",
+    "plotly>=5.0",
+    "numpy>=1.20",
+]
+
+[project.optional-dependencies]
+windows = ["pywin32>=306"]
+
+[project.urls]
+"Homepage" = "https://github.com/<username>/csv-plotter-app"
+"Bug Tracker" = "https://github.com/<username>/csv-plotter-app/issues"
+
+[project.scripts]
+csvplotter = "csv_plotter_app.main:run_streamlit"
+csvplotter-shortcut = "csv_plotter_app.main:create_shortcut"
+
+[tool.setuptools.package-data]
+csv_plotter_app = ["icon.ico"]

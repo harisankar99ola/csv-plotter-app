@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+.build/
+dist/
+.eggs/
+.installed.cfg
+pip-wheel-metadata/
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Coverage / testing
+htmlcov/
+.tox/
+.coverage*
+.pytest_cache/
+
+# Build artifacts
+/build/
+
+# Local configs
+*.local
+
+# Node (if ever used for frontend assets)
+node_modules/
